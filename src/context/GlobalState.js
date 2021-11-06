@@ -4,10 +4,10 @@ import AppReducer from './AppReducer';
 // Intial State
 const intialState = {
     transactions:[
-        { id: 1, text: 'Nut', amount: -20 },
-        { id: 2, text: 'Tie', amount: 300 },
-        { id: 3, text: 'tuy', amount: -10 },
-        { id: 4, text: 'Cloth', amount: 150 }
+        // { id: 1, text: 'Nut', amount: -20 },
+        // { id: 2, text: 'Tie', amount: 300 },
+        // { id: 3, text: 'tuy', amount: -10 },
+        // { id: 4, text: 'Cloth', amount: 150 }
     ]
 }
 
