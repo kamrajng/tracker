@@ -2,22 +2,69 @@
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ 
 }
 
 * {
   box-sizing: border-box;
+  
 }
 
 body {
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* min-height: 100vh; */
+  /* margin: 0; */
   font-family: 'Lato', sans-serif;
+  background-color: aquamarine;
+
+
 }
+
+ 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  /* align-items: center;
+  text-align: center; */
+
+}
+:Link{
+text-decoration: none;
+color: white;
+}
+.navp {
+  margin: 5px;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.navp:hover{
+  color: #2ecc71;
+  cursor: pointer;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.pagepad {
+  margin-top: 80px ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* height:calc(100vh-35px) ;  */
+}
+
 
 .container {
   margin: 30px auto;
@@ -62,6 +109,7 @@ h4 {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
+  
 }
 
 .money.plus {

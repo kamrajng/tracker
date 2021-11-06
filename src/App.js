@@ -1,22 +1,31 @@
-import './App.css';
-import Header from './components/Header';
-import Balance from './components/Balance';
-import IncomeExpense from './components/IncomeExpense';
-import TransactionList from './components/TransactionList';
-import AddTransaction from './components/AddTransaction';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Expense from "./pages/Expense";
+import Home from './pages/Home';
+import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { GlobalProvider} from './context/GlobalState';
+import { GlobalProvider } from "./context/GlobalState";
+import Currency from "./pages/Currency";
+import Todo from "./pages/Todo";
+import Calculator from "./pages/Calculator";
 
 function App() {
   return (
     <GlobalProvider>
-      <Header />
-      <div className="container">
-        <Balance />
-        <IncomeExpense />
-        <TransactionList />
-        <AddTransaction />
-      </div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes >
+        
+          <Route path="/" exact element= {<Home />}  />
+          <Route path="/expense" element= {<Expense />} />
+          <Route path="/currency" element= {<Currency />} />
+          <Route path="/calculator" element= {<Calculator />} />
+          <Route path="/todo" element= {<Todo />} />
+        
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </GlobalProvider>
   );
 }
