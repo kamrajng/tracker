@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import React from "react";
 import { GlobalContext } from "../context/GlobalState";
 
+
 const AddTransaction = () => {
   const [text, setText] = useState('');
   const [amount, setAmount] = useState(0);
@@ -21,7 +22,7 @@ const AddTransaction = () => {
   }
 
   return (
-    <div>
+    <>
       <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
@@ -37,7 +38,7 @@ const AddTransaction = () => {
         </div>
         <button className="btn">Add transaction</button>
       </form>
-    </div>
+    </>
   );
 };
 
