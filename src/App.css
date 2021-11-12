@@ -31,27 +31,28 @@ body {
 .general{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   padding: 15%;
+  margin-top: -200px;
 }
 .general h2{
-  margin-top: 70px ;
+  margin-top: 80px ;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .pagepad{
-  margin-top: 45px ;
+  margin-top: 80px ;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .calculator{
-
+  border-radius: 20px;
   width: 100%;
-  min-width: 400px ;
+  min-width: 200px ;
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
@@ -59,8 +60,8 @@ body {
 .display{
   padding: 16px;
   text-align: center;
-  background-color: rgb(146, 172, 32);
-  color: #fff;
+  background-color: rgb(77, 23, 223);
+  color: #d010d6;
   font-size: 24px;
   font-weight: 300;
 }
@@ -100,7 +101,7 @@ body {
 .digits button{
   flex: 1 1 33.333%;
   max-width: 33.333%;
-  background-color:rgb(146, 172, 32);
+  background-color:rgb(77, 23, 223);
 }
 
 .nav {
