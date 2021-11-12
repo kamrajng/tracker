@@ -5,8 +5,9 @@ import TodoList from '../components/TodoList'
 
 const Todo = () => {
     return (
-        <div >
-            <h2 className='pagepad'>Todo List</h2>
+        <div className='general'>
+      <h2> Todo List</h2>
+            <h1>ayutoopjoipsoei;e</h1>
         <div>
             <TodoHeader />
             <TodoList />

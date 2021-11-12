@@ -2,8 +2,8 @@ import React from "react";
 
 const Currency = () => {
   return (
-    <div >
-      <h2 className='pagepad'>Currency</h2>
+    <div className='general'>
+      <h2> Currency</h2>
     </div>
   );
 };
